@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 10px 0px;
+  position: absolute;
+  top: 0px;
+  z-index: 5;
+}
+
+header .logo {
+  margin-right: auto;
+  font-size: xx-large;
+  color: radial-gradient(
+    circle,
+    #ffffff 0%,
+    /* Trắng từ trung tâm */ #63ffd1 50%,
+    /* Xanh lá cây nhạt ở giữa */ #bf9dff 75%,
+    /* Tím nhạt gần rìa */ #ffea22 90%,
+    /* Màu vàng sáng gần rìa */ #ffffff 100% /* Trắng ở rìa */
+  );
+}
+
+.nav_link li {
+  display: inline-block;
+  padding: 0px 15px;
+}
+
+.nav_link li a {
+  font-size: 17px;
+  color: #fff;
+}
+
+.header_btn button {
+  border-radius: 12px;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+/* Banner */
+#banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+.banner__content {
+  margin-top: 250px;
+  width: 40%;
+}
+
+.banner_btn button {
+  background-color: #965cff;
+  padding: 10px 25px;
+  border-radius: 12px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.banner__content h1 {
+  font-size: 46px;
+  margin-bottom: 20px;
+}
+
+.banner_image_item {
+  margin-top: 50px;
+  width: 90%;
+}
+
+.banner_images .box_price {
+  width: 251px;
+  height: 113px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.banner_images {
+  position: relative;
+}
+
+.banner_images .box_price {
+  position: absolute;
+  top: 30px;
+  left: 1200px;
+}
+
+.banner_images .box_price .box_price-title {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.banner_images .box_price .price {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
